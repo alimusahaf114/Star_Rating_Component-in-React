@@ -5,7 +5,7 @@ export default function StarRating({ totalStars = 10 }) {
   const [selectedStars, setSelectedStars] = useState(0);
   return (
     <>
-      {createArray(totalStars).map((n, i) => (
+      {createArray(totalStars).map((_, i) => (
         <Star
           key={i}
           selected={selectedStars > i}
